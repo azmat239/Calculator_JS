@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/calculator.css" />
+    <script src="js/calculator.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="calculator_main">
+        <div id="value">0</div>
+        <div class="gridcols">
+          <button
+            type="button"
+            value="1"
+            style="border-top-left-radius: 2.4rem"
+            onclick="setValue(event)"
+          >
+            1
+          </button>
+          <button type="button" value="2" onclick="setValue(event)">2</button>
+          <button type="button" value="3" onclick="setValue(event)">3</button>
+          <button
+            type="button"
+            value="+"
+            style="border-top-right-radius: 2.4rem"
+            onclick="setOperator(event)"
+          >
+            +
+          </button>
+          <button type="button" value="4" onclick="setValue(event)">4</button>
+          <button type="button" value="5" onclick="setValue(event)">5</button>
+          <button type="button" value="6" onclick="setValue(event)">6</button>
+          <button type="button" value="-" onclick="setOperator(event)">
+            -
+          </button>
+          <button type="button" value="7" onclick="setValue(event)">7</button>
+          <button type="button" value="8" onclick="setValue(event)">8</button>
+          <button type="button" value="9" onclick="setValue(event)">9</button>
+          <button type="button" value="*" onclick="setOperator(event)">
+            *
+          </button>
+          <button type="button" value="0" onclick="setValue(event)">0</button>
+          <button type="button" value="00" onclick="setValue(event)">00</button>
+          <button type="button" value="=" onclick="calculate()">=</button>
+          <button type="button" value="/" onclick="setOperator(event)">
+            /
+          </button>
+          <button
+            type="button"
+            value="-"
+            style="border-bottom-left-radius: 2.4rem"
+            onclick="setOn()"
+          >
+            on
+          </button>
+          <button type="button" value="%" onclick="setOperator(event)">
+            %
+          </button>
+          <button type="button" value="8" onclick="setOff(event)">0ff</button>
+          <button
+            type="button"
+            value="9"
+            style="border-bottom-right-radius: 2.4rem"
+            onclick="clearAll()"
+          >
+            AC
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
